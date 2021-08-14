@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.scrolling-tabs.css">
+	<link rel="stylesheet" type="text/css" href="css/mCustomScrollbar.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/line-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive-tabs.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body id="myPluginPage" data-spy="scroll" data-target=".navbar" data-offset="60" style="overflow: hidden;">
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+	</div>
+	<div class="scroll_path">
+		<span class="scroller_button"></span>
+	</div>
+	<header>
+		<nav class="navbar navbar navbar-expand-all bg-dark navbar-dark">
+			<a href="index.html" class="text-white float-left logo">DEMO</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a href="#masonryFilter">Masonry Filter</a>
+					</li>
+					<li class="nav-item">
+						<a href="#pagination">Pagination</a>
+					</li>
+					<li class="nav-item">
+						<a href="#cssCounter">CSS Counter</a>
+					</li>
+					<li class="nav-item">
+						<a href="#stepperForm">Stepper Form</a>
+					</li>
+					<li class="nav-item">
+						<a href="#scrollingTabs">Scrolling Tabs</a>
+					</li>
+					<li class="nav-item">
+						<a href="#hoverEffect">Hover Effect</a>
+					</li>
+					<li class="nav-item">
+						<a href="#customScrollbar">Custom Scrollbar</a>
+					</li>
+					<li class="nav-item">
+						<a href="#responsiveTabsStepper">Responsive Tabs Stepper</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section id="masonryFilter">
+		<div class="container">
+			<div class="section_title">
+				<h2>Isotope Masonry Filter</h2>
+			</div>
+			<div class="image_gallery row">
+				<div class="col-sm-3 col-5">
+					<div class="sidebar_wapper">
+						<div class="fixed_side_bar">
+							<ul class="filter_btns">
+								<li><a class="btn btn-default active_filter" data-filter="*">All</a></li>
+								<li><a class="btn btn-default" data-filter=".image_one">One</a></li>
+								<li><a class="btn btn-default" data-filter=".image_two">Two</a></li>
+								<li><a class="btn btn-default" data-filter=".image_three">Three</a></li>
+								<li><a class="btn btn-default" data-filter=".image_four">Four</a></li>
+								<li><a class="btn btn-default" data-filter=".image_five">Five</a></li>
+								<li><a class="btn btn-default" data-filter=".image_six">Six</a></li>
+								<li><a class="btn btn-default" data-filter=".image_seven">Seven</a></li>
+								<li><a class="btn btn-default" data-filter=".image_eight">Eight</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-9 col-7">
+					<div class="grid row">
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_one">
+							<a href="images/1.jpg" data-lightbox="images_light_box">
+								<img src="images/1.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 1</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_two">
+							<a href="images/2.jpg" data-lightbox="images_light_box">
+								<img src="images/2.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 2</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_three">
+							<a href="images/3.jpg" data-lightbox="images_light_box">
+								<img src="images/3.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 3</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_four">
+							<a href="images/4.jpg" data-lightbox="images_light_box">
+								<img src="images/4.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 4</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_five">
+							<a href="images/5.jpg" data-lightbox="images_light_box">
+								<img src="images/5.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 5</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_six">
+							<a href="images/6.jpg" data-lightbox="images_light_box">
+								<img src="images/6.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 6</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_seven">
+							<a href="images/7.jpg" data-lightbox="images_light_box">
+								<img src="images/7.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 7</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_eight">
+							<a href="images/8.jpg" data-lightbox="images_light_box">
+								<img src="images/8.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 8</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_one">
+							<a href="images/1.jpg" data-lightbox="images_light_box">
+								<img src="images/1.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 1</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_two">
+							<a href="images/2.jpg" data-lightbox="images_light_box">
+								<img src="images/2.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 2</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_three">
+							<a href="images/3.jpg" data-lightbox="images_light_box">
+								<img src="images/3.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 3</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_four">
+							<a href="images/4.jpg" data-lightbox="images_light_box">
+								<img src="images/4.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 4</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_five">
+							<a href="images/5.jpg" data-lightbox="images_light_box">
+								<img src="images/5.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 5</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_six">
+							<a href="images/6.jpg" data-lightbox="images_light_box">
+								<img src="images/6.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 6</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_seven">
+							<a href="images/7.jpg" data-lightbox="images_light_box">
+								<img src="images/7.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 7</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_eight">
+							<a href="images/8.jpg" data-lightbox="images_light_box">
+								<img src="images/8.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 8</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_one">
+							<a href="images/1.jpg" data-lightbox="images_light_box">
+								<img src="images/1.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 1</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_two">
+							<a href="images/2.jpg" data-lightbox="images_light_box">
+								<img src="images/2.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 2</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_three">
+							<a href="images/3.jpg" data-lightbox="images_light_box">
+								<img src="images/3.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 3</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_four">
+							<a href="images/4.jpg" data-lightbox="images_light_box">
+								<img src="images/4.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 4</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_five">
+							<a href="images/5.jpg" data-lightbox="images_light_box">
+								<img src="images/5.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 5</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_six">
+							<a href="images/6.jpg" data-lightbox="images_light_box">
+								<img src="images/6.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 6</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_seven">
+							<a href="images/7.jpg" data-lightbox="images_light_box">
+								<img src="images/7.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 7</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_eight">
+							<a href="images/8.jpg" data-lightbox="images_light_box">
+								<img src="images/8.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 8</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_one">
+							<a href="images/1.jpg" data-lightbox="images_light_box">
+								<img src="images/1.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 1</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_two">
+							<a href="images/2.jpg" data-lightbox="images_light_box">
+								<img src="images/2.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 2</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_three">
+							<a href="images/3.jpg" data-lightbox="images_light_box">
+								<img src="images/3.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 3</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_four">
+							<a href="images/4.jpg" data-lightbox="images_light_box">
+								<img src="images/4.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 4</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_five">
+							<a href="images/5.jpg" data-lightbox="images_light_box">
+								<img src="images/5.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 5</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_six">
+							<a href="images/6.jpg" data-lightbox="images_light_box">
+								<img src="images/6.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 6</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_seven">
+							<a href="images/7.jpg" data-lightbox="images_light_box">
+								<img src="images/7.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 7</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_eight">
+							<a href="images/8.jpg" data-lightbox="images_light_box">
+								<img src="images/8.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 8</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_one">
+							<a href="images/1.jpg" data-lightbox="images_light_box">
+								<img src="images/1.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 1</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_two">
+							<a href="images/2.jpg" data-lightbox="images_light_box">
+								<img src="images/2.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 2</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_three">
+							<a href="images/3.jpg" data-lightbox="images_light_box">
+								<img src="images/3.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 3</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_four">
+							<a href="images/4.jpg" data-lightbox="images_light_box">
+								<img src="images/4.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 4</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_five">
+							<a href="images/5.jpg" data-lightbox="images_light_box">
+								<img src="images/5.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 5</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_six">
+							<a href="images/6.jpg" data-lightbox="images_light_box">
+								<img src="images/6.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 6</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_seven">
+							<a href="images/7.jpg" data-lightbox="images_light_box">
+								<img src="images/7.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 7</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_eight">
+							<a href="images/8.jpg" data-lightbox="images_light_box">
+								<img src="images/8.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 8</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_one">
+							<a href="images/1.jpg" data-lightbox="images_light_box">
+								<img src="images/1.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 1</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_two">
+							<a href="images/2.jpg" data-lightbox="images_light_box">
+								<img src="images/2.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 2</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_three">
+							<a href="images/3.jpg" data-lightbox="images_light_box">
+								<img src="images/3.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 3</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_four">
+							<a href="images/4.jpg" data-lightbox="images_light_box">
+								<img src="images/4.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 4</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_five">
+							<a href="images/5.jpg" data-lightbox="images_light_box">
+								<img src="images/5.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 5</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_six">
+							<a href="images/6.jpg" data-lightbox="images_light_box">
+								<img src="images/6.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 6</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_seven">
+							<a href="images/7.jpg" data-lightbox="images_light_box">
+								<img src="images/7.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 7</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_eight">
+							<a href="images/8.jpg" data-lightbox="images_light_box">
+								<img src="images/8.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 8</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_one">
+							<a href="images/1.jpg" data-lightbox="images_light_box">
+								<img src="images/1.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 1</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_two">
+							<a href="images/2.jpg" data-lightbox="images_light_box">
+								<img src="images/2.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 2</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_three">
+							<a href="images/3.jpg" data-lightbox="images_light_box">
+								<img src="images/3.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 3</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_four">
+							<a href="images/4.jpg" data-lightbox="images_light_box">
+								<img src="images/4.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 4</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_five">
+							<a href="images/5.jpg" data-lightbox="images_light_box">
+								<img src="images/5.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 5</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_six">
+							<a href="images/6.jpg" data-lightbox="images_light_box">
+								<img src="images/6.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 6</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_seven">
+							<a href="images/7.jpg" data-lightbox="images_light_box">
+								<img src="images/7.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 7</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_eight">
+							<a href="images/8.jpg" data-lightbox="images_light_box">
+								<img src="images/8.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 8</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_one">
+							<a href="images/1.jpg" data-lightbox="images_light_box">
+								<img src="images/1.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 1</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_two">
+							<a href="images/2.jpg" data-lightbox="images_light_box">
+								<img src="images/2.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 2</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_three">
+							<a href="images/3.jpg" data-lightbox="images_light_box">
+								<img src="images/3.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 3</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_four">
+							<a href="images/4.jpg" data-lightbox="images_light_box">
+								<img src="images/4.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 4</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_five">
+							<a href="images/5.jpg" data-lightbox="images_light_box">
+								<img src="images/5.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 5</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_six">
+							<a href="images/6.jpg" data-lightbox="images_light_box">
+								<img src="images/6.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 6</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_seven">
+							<a href="images/7.jpg" data-lightbox="images_light_box">
+								<img src="images/7.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 7</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_eight">
+							<a href="images/8.jpg" data-lightbox="images_light_box">
+								<img src="images/8.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 8</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_one">
+							<a href="images/1.jpg" data-lightbox="images_light_box">
+								<img src="images/1.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 1</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_two">
+							<a href="images/2.jpg" data-lightbox="images_light_box">
+								<img src="images/2.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 2</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_three">
+							<a href="images/3.jpg" data-lightbox="images_light_box">
+								<img src="images/3.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 3</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_four">
+							<a href="images/4.jpg" data-lightbox="images_light_box">
+								<img src="images/4.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 4</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_five">
+							<a href="images/5.jpg" data-lightbox="images_light_box">
+								<img src="images/5.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 5</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_six">
+							<a href="images/6.jpg" data-lightbox="images_light_box">
+								<img src="images/6.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 6</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_seven">
+							<a href="images/7.jpg" data-lightbox="images_light_box">
+								<img src="images/7.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 7</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_eight">
+							<a href="images/8.jpg" data-lightbox="images_light_box">
+								<img src="images/8.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 8</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_one">
+							<a href="images/1.jpg" data-lightbox="images_light_box">
+								<img src="images/1.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 1</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_two">
+							<a href="images/2.jpg" data-lightbox="images_light_box">
+								<img src="images/2.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 2</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_three">
+							<a href="images/3.jpg" data-lightbox="images_light_box">
+								<img src="images/3.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 3</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_four">
+							<a href="images/4.jpg" data-lightbox="images_light_box">
+								<img src="images/4.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 4</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_five">
+							<a href="images/5.jpg" data-lightbox="images_light_box">
+								<img src="images/5.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 5</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_six">
+							<a href="images/6.jpg" data-lightbox="images_light_box">
+								<img src="images/6.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 6</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_seven">
+							<a href="images/7.jpg" data-lightbox="images_light_box">
+								<img src="images/7.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 7</h4>
+						</div>
+						<div class="grid-item col-12 col-md-6 col-xl-4 image_eight">
+							<a href="images/8.jpg" data-lightbox="images_light_box">
+								<img src="images/8.jpg" alt="image" class="img-fluid">
+							</a>
+							<h4>images 8</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section id="pagination">
+		<div class="container">
+			<div class="section_title">
+				<h2>Pagination</h2>
+			</div>
+			<div class="page_pagination">
+				<ul>
+					<li><a href="javascript:void(0);"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+					<li><a href="javascript:void(0);">1</a></li>
+					<li class="active"><a href="javascript:void(0);">2</a></li>
+					<li><a href="javascript:void(0);">3</a></li>
+					<li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section id="cssCounter">
+		<div class="container">
+			<div class="section_title">
+				<h2>Accordion With CSS Counter</h2>
+			</div>
+			<div class="day_wise_itinerary">
+				<div class="day_wise_itinerary_accordion">
+					<h3>Day 1: <span>(Pattaya)</span> <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+					<div class="content">
+						<p>
+							Arrival in Pattaya, Welcome to Pattaya; sun, sand and mouth-watering Thai cuisine, Pattaya is a must-visit if Thailand's on your bucket list. On this day, you will take a flight from your departure city, arrive in Bangkok and get a transfer to your hotel in Pattaya. Once you have checked-in, spend the day at leisure. Later, return to your hotel for a comfortable stay.
+						</p>
+						<p>
+							Suggested: Once you have relaxed after your journey, you can head out to one of the finest and cleanest beaches in Pattaya - Wong Amat Beach. A peaceful beach to sun bathe, swim and relax. The beach isn't crowded and you can hire chairs or try a variety of cuisines and drinks at the nearby restaurants and bars. Alternatively, you can visit the Walking Street and experience Pattaya's famous nightlife! (Please note, suggested places are only for your reference and are not included in the package.)
+						</p>
+						<p>
+							Alternatively, you can visit the Walking Street and experience Pattaya's famous nightlife! (Please note, suggested places are only for your reference and are not included in the package.)
+						</p>
+					</div>
+					<h3>Day 2: <span>(Pattaya Coral Island TOur)</span> <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+					<div class="content">
+						<p>
+							Arrival in Pattaya, Welcome to Pattaya; sun, sand and mouth-watering Thai cuisine, Pattaya is a must-visit if Thailand's on your bucket list. On this day, you will take a flight from your departure city, arrive in Bangkok and get a transfer to your hotel in Pattaya. Once you have checked-in, spend the day at leisure. Later, return to your hotel for a comfortable stay.
+						</p>
+						<p>
+							Suggested: Once you have relaxed after your journey, you can head out to one of the finest and cleanest beaches in Pattaya - Wong Amat Beach. A peaceful beach to sun bathe, swim and relax. The beach isn't crowded and you can hire chairs or try a variety of cuisines and drinks at the nearby restaurants and bars. Alternatively, you can visit the Walking Street and experience Pattaya's famous nightlife! (Please note, suggested places are only for your reference and are not included in the package.)
+						</p>
+					</div>
+					<h3>Day 3: <span>(Pattaya to Bangkok)</span> <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+					<div class="content">
+						<p>
+							Arrival in Pattaya, Welcome to Pattaya; sun, sand and mouth-watering Thai cuisine, Pattaya is a must-visit if Thailand's on your bucket list. On this day, you will take a flight from your departure city, arrive in Bangkok and get a transfer to your hotel in Pattaya. Once you have checked-in, spend the day at leisure. Later, return to your hotel for a comfortable stay.
+						</p>
+						<p>
+							Suggested: Once you have relaxed after your journey, you can head out to one of the finest and cleanest beaches in Pattaya - Wong Amat Beach. A peaceful beach to sun bathe, swim and relax. The beach isn't crowded and you can hire chairs or try a variety of cuisines and drinks at the nearby restaurants and bars. Alternatively, you can visit the Walking Street and experience Pattaya's famous nightlife! (Please note, suggested places are only for your reference and are not included in the package.)
+						</p>
+						<p>
+							Alternatively, you can visit the Walking Street and experience Pattaya's famous nightlife! (Please note, suggested places are only for your reference and are not included in the package.)
+						</p>
+					</div>
+					<h3>Day 4: <span>(Bangkok Half day City Tour)</span> <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+					<div class="content">
+						<p>
+							Arrival in Pattaya, Welcome to Pattaya; sun, sand and mouth-watering Thai cuisine, Pattaya is a must-visit if Thailand's on your bucket list. On this day, you will take a flight from your departure city, arrive in Bangkok and get a transfer to your hotel in Pattaya. Once you have checked-in, spend the day at leisure. Later, return to your hotel for a comfortable stay.
+						</p>
+						<p>
+							Suggested: Once you have relaxed after your journey, you can head out to one of the finest and cleanest beaches in Pattaya - Wong Amat Beach. A peaceful beach to sun bathe, swim and relax. The beach isn't crowded and you can hire chairs or try a variety of cuisines and drinks at the nearby restaurants and bars. Alternatively, you can visit the Walking Street and experience Pattaya's famous nightlife! (Please note, suggested places are only for your reference and are not included in the package.)
+						</p>
+					</div>
+					<h3>Day 5: <span>(Departure from Bangkok)</span> <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+					<div class="content">
+						<p>
+							Arrival in Pattaya, Welcome to Pattaya; sun, sand and mouth-watering Thai cuisine, Pattaya is a must-visit if Thailand's on your bucket list. On this day, you will take a flight from your departure city, arrive in Bangkok and get a transfer to your hotel in Pattaya. Once you have checked-in, spend the day at leisure. Later, return to your hotel for a comfortable stay.
+						</p>
+						<p>
+							Suggested: Once you have relaxed after your journey, you can head out to one of the finest and cleanest beaches in Pattaya - Wong Amat Beach. A peaceful beach to sun bathe, swim and relax. The beach isn't crowded and you can hire chairs or try a variety of cuisines and drinks at the nearby restaurants and bars. Alternatively, you can visit the Walking Street and experience Pattaya's famous nightlife! (Please note, suggested places are only for your reference and are not included in the package.)
+						</p>
+						<p>
+							Alternatively, you can visit the Walking Street and experience Pattaya's famous nightlife! (Please note, suggested places are only for your reference and are not included in the package.)
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section id="stepperForm">
+		<div class="container">
+			<div class="section_title">
+				<h2>Accordion Stepper Form</h2>
+			</div>
+			<div id="register_steps_tab">
+				<h3><span class="step_number">1</span>user info</h3>
+				<div class="step_content">
+					<div class="row">
+						<div class="col-12">
+							<h3>User Account Info</h3>
+							<form class="user_acc_info">
+								<div class="form_input">
+									<label>Email *</label>
+									<input type="text" class="input_text" placeholder="Enter your email">
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>Create Password *</label>
+											<input type="password" class="input_text" placeholder="*****">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>Confirm Password *</label>
+											<input type="password" class="input_text" placeholder="*****">
+										</div>
+									</div>
+								</div>
+								<div class="next_step_and_prev_step">
+									<a href="javascript:void(0);" class="next_step">Next</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<h3><span class="step_number">2</span>Contact Information</h3>
+				<div class="step_content">
+					<div class="row">
+						<div class="col-12">
+							<h3>Contact Information</h3>
+							<form class="contact_info">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>First Name *</label>
+											<input type="text" class="input_text" placeholder="Enter first name">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>Last Name *</label>
+											<input type="text" class="input_text" placeholder="Enter first name">
+										</div>
+									</div>
+								</div>
+								<div class="form_input">
+									<label>Business Name *</label>
+									<input type="text" class="input_text" placeholder="Enter phone number">
+								</div>
+								<div class="form_input">
+									<label>Phone Number *</label>
+									<input type="text" class="input_text" placeholder="Enter phone number">
+								</div>
+								<div class="next_step_and_prev_step">
+									<a href="javascript:void(0);" class="prev_step">Previous</a>
+									<a href="javascript:void(0);" class="next_step">Next</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<h3><span class="step_number">3</span>Billing Details</h3>
+				<div class="step_content">
+					<div class="row">
+						<div class="col-12">
+							<h3>Billing Address</h3>
+							<form class="billing_address">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>First Name *</label>
+											<input type="text" class="input_text" placeholder="Enter first name">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>Last Name *</label>
+											<input type="text" class="input_text" placeholder="Enter first name">
+										</div>
+									</div>
+								</div>
+								<div class="form_input">
+									<label>Phone Number *</label>
+									<input type="text" class="input_text" placeholder="Enter phone number">
+								</div>
+								<div class="form_input">
+									<label>Address *</label>
+									<input type="text" class="input_text" placeholder="Enter address">
+								</div>
+								<div class="form_input">
+									<label>Address Line 2</label>
+									<input type="text" class="input_text" placeholder="Enter address">
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>City *</label>
+											<input type="text" class="input_text" placeholder="Enter city">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>State/Province *</label>
+											<input type="text" class="input_text" placeholder="Enter state/province">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>Zip/Postal Code *</label>
+											<input type="text" class="input_text" placeholder="Enter zip/postal code">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>Country *</label>
+											<select class="input_text">
+												<option>United States</option>
+												<option>India</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="bill_check_box">
+									<input type="checkbox" id="chk_1">
+									<label for="chk_1">Shipping address is the same as billing</label>
+								</div>
+								<div class="next_step_and_prev_step">
+									<a href="javascript:void(0);" class="prev_step">Previous</a>
+									<a href="javascript:void(0);" class="next_step">Next</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<h3><span class="step_number">4</span>shipping Details</h3>
+				<div class="step_content">
+					<div class="row">
+						<div class="col-12">
+							<h3>Shipping Details</h3>
+							<form class="billing_address">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>First Name *</label>
+											<input type="text" class="input_text" placeholder="Enter first name">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>Last Name *</label>
+											<input type="text" class="input_text" placeholder="Enter first name">
+										</div>
+									</div>
+								</div>
+								<div class="form_input">
+									<label>Phone Number *</label>
+									<input type="text" class="input_text" placeholder="Enter phone number">
+								</div>
+								<div class="form_input">
+									<label>Address *</label>
+									<input type="text" class="input_text" placeholder="Enter address">
+								</div>
+								<div class="form_input">
+									<label>Address Line 2</label>
+									<input type="text" class="input_text" placeholder="Enter address">
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>City *</label>
+											<input type="text" class="input_text" placeholder="Enter city">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>State/Province *</label>
+											<input type="text" class="input_text" placeholder="Enter state/province">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>Zip/Postal Code *</label>
+											<input type="text" class="input_text" placeholder="Enter zip/postal code">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form_input">
+											<label>Country *</label>
+											<select class="input_text">
+												<option>United States</option>
+												<option>India</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="next_step_and_prev_step">
+									<a href="javascript:void(0);" class="prev_step">Previous</a>
+									<input type="submit" class="reg_submit_btn" value="Register">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section id="scrollingTabs">
+		<div class="container">
+			<div class="section_title">
+				<h2>Scrolling Tabs</h2>
+			</div>
+			<div class="tour_package_tabs">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation">
+						<a class="active" href="#tab1" role="tab" data-toggle="tab">Bali Tours</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab2" role="tab" data-toggle="tab">Dubai Tours</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab3" role="tab" data-toggle="tab">Mauritius Tours</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab4" role="tab" data-toggle="tab">Thailand Tours</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab5" role="tab" data-toggle="tab">Singapore Tours</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab6" role="tab" data-toggle="tab">Hongkong Tours</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab7" role="tab" data-toggle="tab">Maldives Tours</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab8" role="tab" data-toggle="tab">France Tours</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab9" role="tab" data-toggle="tab">Italy Tours</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab10" role="tab" data-toggle="tab">Amritsar Tours</a>
+					</li>
+				</ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab1">
+                        <h2>Bali Tours</h2>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab2">
+                        <h2>Dubai Tours</h2>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab3">
+                        <h2>Mauritius Tours</h2>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab4">
+                        <h2>Thailand Tours</h2>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab5">
+                        <h2>Singapore Tours</h2>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab6">
+                        <h2>Hongkong Tours</h2>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab7">
+                        <h2>Maldives Tours</h2>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab8">
+                        <h2>France Tours</h2>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab9">
+                        <h2>Italy Tours</h2>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab10">
+                        <h2>Amritsar Tours</h2>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</section>
+	<hr>
+	<section id="hoverEffect">
+		<div class="container">
+			<div class="section_title">
+				<h2>Hover Effect For Profile</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-6">
+					<div class="profile_image_hover">
+						<a class="leader" href="images/me_1.jpg" data-fancybox="gallery">
+							<aside class="four-right two-right three-bottom"></aside>
+							<div class="profile_heading">
+								<div class="title">
+									<h4 style="margin:0;">Kuldip Koradia</h4>
+									<p style="margin: 0px;">Sr. Web Designer</p>
+								</div>
+								<div class="blurb">
+									<h4 style="margin:0;">Kuldip Koradia</h4>
+									<p style="margin: 0px;">Sr. Web Designer</p>
+								</div>
+							</div>
+							<div class="content">
+								<div class="image">
+									<div class="profile" style="cursor: pointer;">
+										<img src="images/me_1.jpg" alt="profile picture">
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-6">
+					<div class="profile_image_hover">
+						<a class="leader" href="images/me_2.jpg" data-fancybox="gallery">
+							<aside class="four-right two-right three-bottom"></aside>
+							<div class="profile_heading">
+								<div class="title">
+									<h4 style="margin:0;">Kuldip Koradia</h4>
+									<p style="margin: 0px;">Sr. Web Designer</p>
+								</div>
+								<div class="blurb">
+									<h4 style="margin:0;">Kuldip Koradia</h4>
+									<p style="margin: 0px;">Sr. Web Designer</p>
+								</div>
+							</div>
+							<div class="content">
+								<div class="image">
+									<div class="profile" style="cursor: pointer;">
+										<img src="images/me_2.jpg" alt="profile picture">
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-6">
+					<div class="profile_image_hover">
+						<a class="leader" href="images/me_3.jpg" data-fancybox="gallery">
+							<aside class="four-right two-right three-bottom"></aside>
+							<div class="profile_heading">
+								<div class="title">
+									<h4 style="margin:0;">Kuldip Koradia</h4>
+									<p style="margin: 0px;">Sr. Web Designer</p>
+								</div>
+								<div class="blurb">
+									<h4 style="margin:0;">Kuldip Koradia</h4>
+									<p style="margin: 0px;">Sr. Web Designer</p>
+								</div>
+							</div>
+							<div class="content">
+								<div class="image">
+									<div class="profile" style="cursor: pointer;">
+										<img src="images/me_3.jpg" alt="profile picture">
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-6">
+					<div class="profile_image_hover">
+						<a class="leader" href="images/me_4.jpg" data-fancybox="gallery">
+							<aside class="four-right two-right three-bottom"></aside>
+							<div class="profile_heading">
+								<div class="title">
+									<h4 style="margin:0;">Kuldip Koradia</h4>
+									<p style="margin: 0px;">Sr. Web Designer</p>
+								</div>
+								<div class="blurb">
+									<h4 style="margin:0;">Kuldip Koradia</h4>
+									<p style="margin: 0px;">Sr. Web Designer</p>
+								</div>
+							</div>
+							<div class="content">
+								<div class="image">
+									<div class="profile" style="cursor: pointer;">
+										<img src="images/me_4.jpg" alt="profile picture">
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section id="customScrollbar">
+		<div class="container">
+			<div class="section_title">
+				<h2>Custom Vertical Scrollbar</h2>
+			</div>
+			<div class="scrolling_content">
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</p>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section id="responsiveTabsStepper" class="responsiveTabsStepper">
+		<div class="container">
+			<div class="section_title">
+				<h2>Responsive Tabs Stepper</h2>
+			</div>
+			<div id="responsive_tab" class="admission_inquiry" data-aos="fade-up" data-aos-duration="1000">
+				<ul class="responsive_tab_title row">
+					<li class="col-md-3 blue_arrow">
+						<a href="#tab-1">
+							<img src="images/tab_icon_one.png" alt="tab icon">
+							<p>Personal </br>Detail</p>
+						</a>
+					</li>
+					<li class="col-md-3 orange_arrow">
+						<a href="#tab-2">
+							<img src="images/tab_icon_two.png" alt="tab icon">
+							<p>Contact </br>Detail</p>
+						</a>
+					</li>
+					<li class="col-md-3 pink_arrow">
+						<a href="#tab-3">
+							<img src="images/tab_icon_three.png" alt="tab icon">
+							<p>Residence </br>Detail</p>
+						</a>
+					</li>
+					<li class="col-md-3 green_arrow">
+						<a href="#tab-4">
+							<img src="images/tab_icon_finish.png" alt="tab icon">
+							<p>Finish </br></p>
+						</a>
+					</li>
+				</ul>
+				<div class="responsive_tab_content blue_arrow active_tab_on_load">
+					<div id="tab-1">
+						<h4 class="text_blue">Student Detail</h4>
+						<div class="row">
+							<div class="form-group col-xl-3 col-lg-4 col-sm-6">
+								<input type="text" class="form-control" placeholder="Name Of Child *">
+							</div>
+							<div class="form-group col-xl-3 col-lg-4 col-sm-6">
+								<select class="form-control">
+									<option disabled selected>Seeking Admission in Std *</option>
+									<option>LKG</option>
+									<option>UKG</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+								</select>
+							</div>
+							<div class="form-group col-xl-3 col-lg-4 col-sm-6">
+								<input type="text" class="form-control" id="datepicker" placeholder="Birthdate *">
+							</div>
+							<div class="form-group col-xl-3 col-lg-4 col-sm-6">
+								<input type="text" class="form-control" placeholder="Age *">
+							</div>
+							<div class="form-group col-xl-3 col-lg-4 col-sm-6">
+								<input type="text" class="form-control" placeholder="Current School/ Play House">
+							</div>
+							<div class="form-group col-xl-3 col-lg-4 col-sm-6">
+								<input type="text" class="form-control" placeholder="Father's Name *">
+							</div>
+							<div class="form-group col-xl-3 col-lg-4 col-sm-6">
+								<input type="text" class="form-control" placeholder="Mother's Name *">
+							</div>
+							<div class="form-group col-xl-3 col-lg-4 col-sm-6">
+								<select class="form-control">
+									<option disabled selected>How did you come to know</option>
+									<option>Magazine Article</option>
+									<option>News Paper Ad</option>
+									<option>Seminar</option>
+									<option>Hoading</option>
+									<option>Wall Painting</option>
+									<option>Pamplet</option>
+									<option>SMS</option>
+									<option>Existing Parent</option>
+									<option>Staff Member</option>
+									<option>Play House</option>
+									<option>Other</option>
+								</select>
+							</div>
+						</div>
+						<div class="two_btn_div">
+							<span class="next_step float-right text_orange">Next step!<i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="responsive_tab_content orange_arrow">
+					<div id="tab-2">
+						<h4 class="text_orange">Contact Number</h4>
+						<div class="row">
+							<div class="form-group col-lg-4">
+								<input type="text" class="form-control" placeholder="Phone No. *">
+							</div>
+							<div class="form-group col-lg-4">
+								<input type="text" class="form-control" placeholder="Mobile No. *">
+							</div>
+							<div class="form-group col-lg-4">
+								<input type="text" class="form-control" placeholder="Resident No.">
+							</div>
+						</div>
+						<div class="two_btn_div">
+							<span class="prev_step float-left text_blue"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Previous Step!</span>
+							<span class="next_step float-right text_pink">Next Step!<i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="responsive_tab_content pink_arrow">
+					<div id="tab-3">
+						<h4 class="text_pink">Address</h4>
+						<div class="row">
+							<div class="form-group col-12">
+								<textarea  class="form-control" placeholder="Address *"></textarea>
+							</div>
+						</div>
+						<div class="two_btn_div">
+							<span class="prev_step float-left text_orange"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Previous Step!</span>
+							<span class="next_step float-right text_green">Next Step!<i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="responsive_tab_content green_arrow">
+					<div id="tab-4">
+						<h4 class="text_green">Summary</h4>
+						<div class="table-responsive">
+							<table class="table table-striped">
+								<tr>
+									<th>Name Of Child</th>
+									<td>value fill by the user</td>
+								</tr>
+								<tr>
+									<th>Seeking Admission in Std</th>
+									<td>value fill by the user</td>
+								</tr>
+								<tr>
+									<th>Birthdate</th>
+									<td>value fill by the user</td>
+								</tr>
+								<tr>
+									<th>Age</th>
+									<td>value fill by the user</td>
+								</tr>
+								<tr>
+									<th>Current School/ Play House</th>
+									<td>value fill by the user</td>
+								</tr>
+								<tr>
+									<th>Father's Name</th>
+									<td>value fill by the user</td>
+								</tr>
+								<tr>
+									<th>Mother's Name</th>
+									<td>value fill by the user</td>
+								</tr>
+								<tr>
+									<th>How did you come to know</th>
+									<td>value fill by the user</td>
+								</tr>
+								<tr>
+									<th>Phone No.</th>
+									<td>value fill by the user</td>
+								</tr>
+								<tr>
+									<th>Mobile No.</th>
+									<td>value fill by the user</td>
+								</tr>
+								<tr>
+									<th>Resident No.</th>
+									<td>value fill by the user</td>
+								</tr>
+								<tr>
+									<th>Address</th>
+									<td>value fill by the user</td>
+								</tr>
+							</table>
+						</div>
+						<div class="two_btn_div">
+							<span class="prev_step float-left text_pink"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Previous Step!</span>
+							<button type="submit" class="submit_form float-right text_blue">Submit<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<p>Design & Copyright © Kuldip Koradia.</p>
+		</div>
+	</footer>
+	<div class="footer-sticky-strip">
+		<div class="container">
+			<p>Design & Copyright © Kuldip Koradia.</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrolling-tabs.js"></script>
+	<script type="text/javascript" src="js/mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script type="text/javascript" src="js/jquery.responsiveTabs.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
