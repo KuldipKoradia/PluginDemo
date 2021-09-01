@@ -9,9 +9,9 @@ $(window).on('load',function() {
 
 // js sticky footer strip start
 $(document).ready(function(){
-    setTimeout(function(){
-        $(window).trigger('resize');
-    }, 150);
+    // setTimeout(function(){
+    //     $(window).trigger('resize');
+    // }, 150);
     var windowHeight = $(window).height();
     var footerOffset = $('footer').offset().top;
     var windowScroll = $(document).scrollTop();
