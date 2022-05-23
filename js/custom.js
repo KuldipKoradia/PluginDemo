@@ -248,7 +248,7 @@ $(document).ready(function() {
     // js responsiveTabsStepper end
 
     // js fancybox start
-    // $(".portfoliyo_img_dec").fancybox({
+    // $(".leader").fancybox({
     //     prevEffect: 'none',
     //     nextEffect: 'none',
     //     openMethod: 'stickyup',
